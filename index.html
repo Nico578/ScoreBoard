@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html id="page" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard VolleyBall</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1 id="titre">ScoreBoard Volleyball</h1>
+        <span></span>
+    </div>
+
+    <!-------------------------Flex Container Home----------------------->
+
+    
+    
+    
+    <div class="flex-container-home">
+        
+        <div class="selectLeagueHome">
+            <h2>1. Séléctionnez la ligue de l'équipe jouant à domicile</h2>
+            <select id="ligueHome">
+                <option> Séléctionnez votre ligue</option>
+                <option value="ligueA">Ligue A</option>
+                <option value="ligueB">Ligue B</option>
+            </select>
+        </div>
+
+        <div class="selectClubHome">
+        <h2>2. Séléctionnez le club</h2>
+        <form id="formHome">
+            <select id="selectHome">
+                <option value="none">  Sélectionnez votre équipe </option>
+                <option value="Ajaccio">Ajaccio</option>
+                <option value="Avignon">Avignon</option>
+                <option value="Frejus">Fréjus</option>
+                <option value="France_Avenir">France Avenir</option>
+                <option value="Nancy">Nancy</option>
+                <option value="Martigues">Martigues</option>
+                <option value="Mende">Mende</option>
+                <option value="Rennes">Rennes</option>
+                <option value="Saint-Jean-D'Illac">Saint-Jean D'illac</option>
+                <option value="St-Nazaire">Saint-Nazaire</option>
+                <option value="St-Quentin">Saint-Quentin</option>
+            </select>
+            <select name="" id="selectHomeA">
+                <option value="">  Sélectionnez votre équipe </option>
+                    <option value="Chaumont"">Chaumont</option> 
+                    <option value="Cambrai">Cambrai</option>
+                    <option value="Cannes">Cannes</option>
+                    <option value="Montpellier">Montpellier</option>
+                    <option value="Nantes">Nantes</option>
+                    <option value="Narbonne">Narbonne</option>
+                    <option value="Nice">Nice</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Plessis_Robinson">Plessis_Robinson</option>
+                    <option value="Poitiers">Poitiers</option>
+                    <option value="Sete">Sete</option>
+                    <option value="Toulouse">Toulouse</option>
+                    <option value="Tourcoing">Tourcoing</option>
+                    <option value="Tours">Tours</option>
+            </select>
+        </form>
+        </div>
+
+        <div class="logoHome"></div>
+        <div class="colorHome">
+            <h2>3. Séléctionnez la couleur du maillot</h2>
+            <input type="button" id="btnBlack" value="black" style="background-color: black; color: black ;">
+                <input type="button" id="btnWhite" value="White" style="background-color: rgb(255, 255, 255); color:rgb(255, 255, 255) ;">
+                <input type="button" id="btnBlue" value="blue" style="background-color: blue; color:blue;">
+                <input type="button" id="btnRed" value="red" style="background-color: red; color:red ;">
+                <input type="button" id="btnPink" value="Pink" style="background-color: rgb(255, 169, 184); color:rgb(255, 169, 184) ;">
+                <input type="button" id="btnYellow" value="Yellow" style="background-color: yellow; color:yellow ;" >
+                <input type="button" id="btnGreen" value="Green" style="background-color: green; color:green ;" >
+            <span></span>
+        </div>
+        <div class="jerseyColorHome">
+            <h2>Couleur du maillot</h2>
+            <span>
+                <img src="/maillot" id="maillot" alt="maillot">
+            </span>
+        </div>
+        <div class="btnValidHome">
+            <button type="submit" id="validHome"> Valider </button>
+        </div>
+    </div>
+
+    <!-------------------------Flex Container Visitor----------------------->
+
+    
+    
+    <div class="flex-container-visitor">
+
+        <div class="selectLeagueVisitor">
+        <h2>1. Séléctionnez la ligue de l'équipe jouant à l'éxterieur</h2>
+        <select id="ligueVisitor">
+            <option> Séléctionnez votre ligue</option>
+            <option value="ligueA">Ligue A</option>
+            <option value="ligueB">Ligue B</option>
+        </select>
+        </div>
+
+        <div class="selectClubVisitor">
+        <h2>2. Séléctionnez le club</h2>
+        <form id="formVisitor">
+            <select id="selectVisitor">
+                <option value="none">  Sélectionnez votre équipe </option>
+                <option value="Ajaccio">Ajaccio</option>
+                <option value="Avignon">Avignon</option>
+                <option value="Frejus">Fréjus</option>
+                <option value="France_Avenir">France Avenir</option>
+                <option value="Nancy">Nancy</option>
+                <option value="Martigues">Martigues</option>
+                <option value="Mende">Mende</option>
+                <option value="Rennes">Rennes</option>
+                <option value="Saint-Jean-D'Illac">Saint-Jean D'illac</option>
+                <option value="St-Nazaire">Saint-Nazaire</option>
+                <option value="St-Quentin">Saint-Quentin</option>
+            </select>
+            <select name="" id="selectVisitorA">
+                <option value="">  Sélectionnez votre équipe </option>
+                    <option value="Chaumont"">Chaumont</option> 
+                    <option value="Cambrai">Cambrai</option>
+                    <option value="Cannes">Cannes</option>
+                    <option value="Montpellier">Montpellier</option>
+                    <option value="Nantes">Nantes</option>
+                    <option value="Narbonne">Narbonne</option>
+                    <option value="Nice">Nice</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Plessis_Robinson">Plessis_Robinson</option>
+                    <option value="Poitiers">Poitiers</option>
+                    <option value="Sete">Sete</option>
+                    <option value="Toulouse">Toulouse</option>
+                    <option value="Tourcoing">Tourcoing</option>
+                    <option value="Tours">Tours</option>
+            </select>
+        </form>
+        </div>
+        <div class="logoVisitor"></div>
+        <div class="colorVisitor">
+            <h2>3. Séléctionnez la couleur du maillot</h2>
+            <input type="button" id="btnBlack" value="black" style="background-color: black; color: black ;">
+                <input type="button" id="btnWhite" value="White" style="background-color: rgb(255, 255, 255); color:rgb(255, 255, 255) ;">
+                <input type="button" id="btnBlue" value="blue" style="background-color: blue; color:blue;">
+                <input type="button" id="btnRed" value="red" style="background-color: red; color:red ;">
+                <input type="button" id="btnPink" value="Pink" style="background-color: rgb(255, 169, 184); color:rgb(255, 169, 184) ;">
+                <input type="button" id="btnYellow" value="Yellow" style="background-color: yellow; color:yellow ;" >
+                <input type="button" id="btnGreen" value="Green" style="background-color: green; color:green ;" >
+            <span></span>
+        </div>
+        <div class="jerseyColorVisitor">
+            <h2>Couleur du maillot</h2>
+            <span>
+                <img src="/maillot" id="maillotVisitor" alt="maillot">
+            </span>
+        </div>
+
+        <div class="scoreboardColor">
+            <h2>4. Séléctionnez la couleur du scoreboard</h2>
+            <select name="" id="colorScoreboard">
+                <option>Séléctionnez la couleur de votre scoreboard</option>
+                <option value="scoreboardBlack"> Noir </option>
+                <option value="scoreboardRed"> Rouge </option>
+                <option value="scoreboardOrange"> Orange </option>
+                <option value="scoreboardBlue"> Bleu </option>
+                <option value="scoreboardPink"> Rose </option>
+                <option value="scoreboardGreen"> Vert </option>
+            </select>
+        </div>
+
+        <div class="btnValidVisitor">
+            <button type="submit" id="validVisitor"> Valider </button>
+        </div>
+    </div>
+
+    <!------------------------flex-container-chargement--------------------------->
+
+    <div class="flex-container-chargement">
+        <img src="/logo scoreboard (1).png" id="logo" alt="logo">
+        <div id="target"></div>
+    </div>
+
+    <!--------------------------flex-container-score ---------------------------->
+
+  <div class="flex-container-scoreboard">
+
+    <div class="principalScore">
+
+        <div class="flex-logo">
+            <div class="logoH"></div>
+            <div></div>
+            <div class="logoV"></div>
+        </div>
+    
+
+        <div class="setScore">
+            <div class="scoreSetHome"></div>
+            <div></div>
+            <div class="scoreSetVisitor"></div>
+        </div>
+
+    </div>
+
+    <div class="flex-container-score">
+        <div class="scoreboard">
+
+            <div class="scoreTitle">
+                <div>SCORE</div>
+                <div></div>
+                <div>SCORE</div>
+            </div>
+
+            <div class="scoreLive">
+                <div class="scoreLiveHome"></div>
+                <div> - </div>
+                <div class="scoreLiveVisitor"></div>
+            </div>
+
+            <div class="scoreFirstSet">
+                <div class="scoreFirstSetHome"></div>
+                <div> - </div>
+                <div class="scoreFirstSetVisitor"></div>
+            </div>
+
+            <div class="scoreSecondSet">
+                <div class="scoreSecondSetHome"></div>
+                <div> - </div>
+                <div class="scoreSecondSetVisitor"></div>
+            </div>
+
+            <div class="scoreThirdSet">
+                <div class="scoreThirdSetHome"></div>
+                <div> - </div>
+                <div class="scoreThirdSetVisitor"></div>
+            </div>
+
+            <div class="scoreFourSet">
+                <div class="scoreFourSetHome"></div>
+                <div> - </div>
+                <div class="scoreFourSetVisitor"></div>
+            </div>
+
+            <div class="scoreFiveSet">
+                <div class="scoreFiveSetHome"></div>
+                <div> - </div>
+                <div class="scoreFiveSetVisitor"></div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-------------------------flex-container-buttons-------------------->
+
+
+    <div class="errorScore"></div>
+
+    <div class="flex-container-buttons">
+        
+        <div class="buttonsHome">
+            <span></span>
+            <button type="submit" id="homePlus"> +1 </button>
+            <button type="submit" id="homeMinus"> -1 </button>
+        </div>
+
+        <div class="submitScore">
+            <div class="checkbox">
+                <input type="checkbox" id="checkBox5">
+                <input type="checkbox" id="checkBox">
+                <h4>Je valide ce score</h4>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="submitFiveSet">Valider le 5eme SET </button>
+                <button type="submit" id="submitFourSet">Valider le 4eme SET </button>
+                <button type="submit" id="submitThirdSet">Valider le 3eme SET </button>
+                <button type="submit" id="submitSecondSet">Valider le 2eme SET </button>
+                <button type="submit" id="submitFirstSet">Valider le  1er SET </button>     
+            </div>
+        </div>
+
+        <div class="buttonsVisitor">
+            <span></span>
+            <button type="submit" id="visitorPlus"> +1 </button>
+            <button type="submit" id="visitorMinus"> -1 </button>
+        </div>
+    </div>
+    
+    <div class="result">
+        <button type="submit" id="validMatch"> Valider le match !</button>
+    </div>
+
+    <div class="scoreboard-obs"></div>
+
+    
+        <div class="flex-scoreboard-obs">
+            <div class="scoreboardLogo">
+                <div class="scoreboardLogoHome"></div>
+                <div class="scoreboardLogoVisitor"></div>
+            </div>
+            <div class="scoreboardTeam">
+                <div class="scoreboardTeamHome"></div>
+                <div class="scoreboardTeamVisitor"></div> 
+            </div>
+            <div class="scoreboardJersey">
+                <div class="scoreboardJerseyHome"></div>
+                <div class="scoreboardJerseyVisitor"></div>
+            </div>
+            <div class="scoreboardSet">
+                <div class="scoreboardSetHome"></div>
+                <div class="scoreboardSetVisitor"></div>
+            </div>
+            <div class="scoreboardScore">
+                <div class="scoreboardScoreHome"></div>
+                <div class="scoreboardScoreVisitor"></div>
+            </div>
+        </div>
+            
+                       
+             
+            
+        </div>
+
+        <div class="scoreboardResultSet"></div>
+
+    </div>
+
+</div>
+
+    <script src="/index.js"></script>
+    <script src="/index2.js"></script>
+</body>
+</html>
