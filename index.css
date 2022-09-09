@@ -4,6 +4,10 @@ body {
     min-width: 800px;
 }
 
+.transparent {
+  background-color: transparent;
+}
+
 .header {
     background: black;
     margin: 0;
@@ -396,7 +400,7 @@ h4 {
 }
 
 #checkBox5, #checkBox {
-    margin: 30px 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 #checkBox5 {

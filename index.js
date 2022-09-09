@@ -768,7 +768,3 @@ validMatch.addEventListener("click", (e) => {
     window.close()
 })
 
-window.onbeforeunload = confirmload;
-function confirmload() {
-    return ""
-}

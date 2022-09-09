@@ -32,26 +32,27 @@
 
         <div class="selectClubHome">
         <h2>2. Séléctionnez le club</h2>
-        <form id="formHome">
+        <form id="formHome" method="POST">
             <select id="selectHome">
                 <option value="none">  Sélectionnez votre équipe </option>
                 <option value="Ajaccio">Ajaccio</option>
+                <option value="ASUL">ASU Lyon</option>
                 <option value="Avignon">Avignon</option>
+                <option value="Cannes">Cannes</option>
                 <option value="Frejus">Fréjus</option>
-                <option value="France_Avenir">France Avenir</option>
+                <option value="France-Avenir">France Avenir</option>
                 <option value="Nancy">Nancy</option>
                 <option value="Martigues">Martigues</option>
                 <option value="Mende">Mende</option>
                 <option value="Rennes">Rennes</option>
                 <option value="Saint-Jean-D'Illac">Saint-Jean D'illac</option>
-                <option value="St-Nazaire">Saint-Nazaire</option>
                 <option value="St-Quentin">Saint-Quentin</option>
             </select>
             <select name="" id="selectHomeA">
                 <option value="">  Sélectionnez votre équipe </option>
                     <option value="Chaumont"">Chaumont</option> 
                     <option value="Cambrai">Cambrai</option>
-                    <option value="Cannes">Cannes</option>
+                    
                     <option value="Montpellier">Montpellier</option>
                     <option value="Nantes">Nantes</option>
                     <option value="Narbonne">Narbonne</option>
@@ -59,6 +60,7 @@
                     <option value="Paris">Paris</option>
                     <option value="Plessis_Robinson">Plessis_Robinson</option>
                     <option value="Poitiers">Poitiers</option>
+                    <option value="St-Nazaire">Saint-Nazaire</option>
                     <option value="Sete">Sete</option>
                     <option value="Toulouse">Toulouse</option>
                     <option value="Tourcoing">Tourcoing</option>
@@ -293,7 +295,11 @@
         <button type="submit" id="validMatch"> Valider le match !</button>
     </div>
 
-    <div class="scoreboard-obs"></div>
+    <div class="scoreboard-obs transparent"></div>
+
+    <div class="scoreboard-img">
+        <img src="./scoreboard/Scoreboard Volley.png" alt="">
+    </div>
 
     
         <div class="flex-scoreboard-obs">
@@ -318,10 +324,8 @@
                 <div class="scoreboardScoreVisitor"></div>
             </div>
         </div>
-            
-                       
+           
              
-            
         </div>
 
         <div class="scoreboardResultSet"></div>
